@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching Transformador - Tu Camino al Éxito</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cereal:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">CoachingPro</div>
+            <div class="nav-links">
+                <a href="#about">Sobre Nosotros</a>
+                <a href="#services">Servicios</a>
+                <a href="#contact">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Descubre Tu Máximo Potencial</h1>
+            <p>Coaching personalizado para transformar tu vida personal y profesional</p>
+            <button class="cta-button" onclick="scrollToForm()">Comienza Tu Viaje</button>
+        </div>
+    </header>
+
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="benefit-card">
+                <i class="fas fa-brain"></i>
+                <h3>Desarrollo Personal</h3>
+                <p>Descubre tus fortalezas y supera tus limitaciones</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-rocket"></i>
+                <h3>Éxito Profesional</h3>
+                <p>Alcanza tus metas y desarrolla tu carrera</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-balance-scale"></i>
+                <h3>Balance Vida-Trabajo</h3>
+                <p>Encuentra el equilibrio perfecto en tu vida</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Da el Primer Paso Hacia Tu Transformación</h2>
+            <form id="coaching-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder="Nombre completo">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Correo electrónico">
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" required placeholder="Teléfono">
+                </div>
+                <div class="form-group">
+                    <select id="interest" name="interest" required>
+                        <option value="" disabled selected>¿Qué tipo de coaching te interesa?</option>
+                        <option value="personal">Coaching Personal</option>
+                        <option value="professional">Coaching Profesional</option>
+                        <option value="leadership">Coaching de Liderazgo</option>
+                        <option value="life">Coaching de Vida</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required placeholder="¿Cuál es tu principal objetivo con el coaching?"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Solicitar Información</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CoachingPro</h4>
+                    <p>Transformando vidas a través del coaching profesional</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Email: info@coachingpro.com</p>
+                    <p>Tel: +1234567890</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CoachingPro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
